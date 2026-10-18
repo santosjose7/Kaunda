@@ -5,7 +5,7 @@ import { business, whatsappLink, services } from "@/lib/data";
 export default function Contact() {
   const [name, setName] = useState("");
   const [service, setService] = useState(services[0].title);
-  const [location, setLocation] = useState(business.areas[0]);
+  const [location, setLocation] = useState("");
   const [message, setMessage] = useState("");
 
   function send(e: React.FormEvent) {
@@ -44,13 +44,8 @@ export default function Contact() {
             </select>
           </label>
           <label>
-            Location
-            <select value={location} onChange={(e) => setLocation(e.target.value)}>
-              {business.areas.map((a) => (
-                <option key={a}>{a}</option>
-              ))}
-              <option>Other</option>
-            </select>
+            Town or county
+            <input required value={location} onChange={(e) => setLocation(e.target.value)} placeholder="For example: Nakuru" />
           </label>
           <label>
             About the job

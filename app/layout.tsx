@@ -9,8 +9,8 @@ const body = Instrument_Sans({ subsets: ["latin"], variable: "--font-body", disp
 export const metadata: Metadata = {
   title: "Kaunda Landscapes | Cabro paving, lawns and garden design in Kenya",
   description:
-    "Kaunda Landscapes builds cabro driveways and pathways, installs and maintains lawns, and designs gardens in Rongo, Kiambu, Kitale and Kisii.",
-  keywords: ["cabro works Kenya", "landscaping Kenya", "lawn installation", "garden design", "Kiambu", "Kisii", "Kitale", "Rongo"],
+    "Kaunda Landscapes builds cabro driveways and pathways, installs and maintains lawns, and designs gardens across Kenya.",
+  keywords: ["cabro works Kenya", "landscaping Kenya", "lawn installation", "garden design"],
 };
 
 const jsonLd = {
@@ -20,7 +20,7 @@ const jsonLd = {
   founder: business.owner,
   foundingDate: String(business.established),
   telephone: business.phoneTel,
-  areaServed: business.areas,
+  areaServed: { "@type": "Country", name: "Kenya" },
   makesOffer: ["Cabro paving", "Lawn installation and maintenance", "Garden design"],
 };
 

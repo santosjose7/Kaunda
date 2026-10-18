@@ -8,7 +8,7 @@ export default function Hero() {
           <p className="hero-kicker">Landscaping across Kenya, since {business.established}</p>
           <h1>Paving, lawns and gardens, built properly.</h1>
           <p className="lead">
-            Kaunda Landscapes designs and builds outdoor spaces for homes, businesses and institutions in {business.areas.slice(0, -1).join(", ")} and {business.areas[business.areas.length - 1]}.
+            Kaunda Landscapes designs and builds outdoor spaces for homes, businesses and institutions anywhere in Kenya.
           </p>
           <div className="actions">
             <a className="btn" href={whatsappLink("Hello Kaunda Landscapes, I would like a quote.")} target="_blank" rel="noopener noreferrer">

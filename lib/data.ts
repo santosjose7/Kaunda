@@ -5,7 +5,7 @@ export const business = {
   phoneDisplay: "0759 108 763",
   phoneTel: "+254759108763",
   whatsapp: "254759108763",
-  areas: ["Rongo", "Kiambu", "Kitale", "Kisii"],
+  serviceArea: "Kenya",
 };
 
 export function whatsappLink(message?: string) {
