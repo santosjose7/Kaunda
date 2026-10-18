@@ -19,12 +19,22 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="scene" role="img" aria-label="Illustration of a mowed lawn with hedges and a cabro paved driveway">
-          <div className="scene-lawn" />
-          <div className="shrub s1" />
-          <div className="shrub s2" />
-          <div className="shrub s3" />
-          <div className="scene-drive" />
+        <div className="scene-wrap">
+          <div className="scene" role="img" aria-label="Illustration of a mowed lawn with hedges and a cabro paved driveway">
+            <div className="scene-lawn" />
+            <div className="shrub s1" />
+            <div className="shrub s2" />
+            <div className="shrub s3" />
+            <div className="scene-drive" />
+          </div>
+          <div className="chip chip-a">
+            <strong>Since {business.established}</strong>
+            <span>Founded by {business.owner}</span>
+          </div>
+          <div className="chip chip-b">
+            <strong>All across Kenya</strong>
+            <span>Homes, businesses, institutions</span>
+          </div>
         </div>
       </div>
     </section>
