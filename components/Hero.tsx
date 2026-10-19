@@ -20,12 +20,22 @@ export default function Hero() {
           </div>
         </div>
         <div className="scene-wrap">
+<<<<<<< HEAD
+          <div className="scene">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/projects/gazebo-cabro-path.jpg"
+              alt="A curved cabro pathway leading to a gazebo on freshly landscaped grounds"
+              fetchPriority="high"
+            />
+=======
           <div className="scene" role="img" aria-label="Illustration of a mowed lawn with hedges and a cabro paved driveway">
             <div className="scene-lawn" />
             <div className="shrub s1" />
             <div className="shrub s2" />
             <div className="shrub s3" />
             <div className="scene-drive" />
+>>>>>>> d8666f302604d06e2b14c0995b7a60be13f2425e
           </div>
           <div className="chip chip-a">
             <strong>Since {business.established}</strong>

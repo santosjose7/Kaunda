@@ -13,7 +13,15 @@ export default function About() {
             You may also see us trading as Kenn Hesbon Kaunda Landscapes KE or Heka Landscapers. Whatever the name on the sign, it is the same team doing the work.
           </p>
         </div>
-        <ul className="facts">
+        <div className="about-side">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="about-logo"
+            src="/logo.webp"
+            alt="Kaunda Landscapes KE logo: a paved garden path and fountain under a rising sun"
+            loading="lazy"
+          />
+          <ul className="facts">
           <li>
             <strong>{business.owner}</strong>
             <span>Owner and founder</span>
@@ -26,7 +34,8 @@ export default function About() {
             <strong>Homes, businesses, institutions</strong>
             <span>Who we build for</span>
           </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </section>
   );

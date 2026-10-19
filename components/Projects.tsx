@@ -25,17 +25,26 @@ export default function Projects() {
 
         <div className="projects">
           {shown.map((p) => (
-            <article className="project" key={p.title + p.location}>
-              {p.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img className="project-media" src={p.image} alt={`${p.title}, ${p.location}`} loading="lazy" />
-              ) : (
-                <div className={`project-media ph ph-${p.category}`} role="img" aria-label={`${categoryLabels[p.category]} project placeholder`} />
-              )}
+            <article className="project" key={p.title}>
+              <div className="project-figure">
+                {p.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    className="project-media"
+                    src={p.image}
+                    alt={p.location ? `${p.title}, ${p.location}` : p.title}
+                    style={p.focus ? { objectPosition: p.focus } : undefined}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className={`project-media ph ph-${p.category}`} role="img" aria-label={`${categoryLabels[p.category]} project placeholder`} />
+                )}
+              </div>
               <div className="project-body">
                 <h3>{p.title}</h3>
                 <p className="project-meta">
-                  {categoryLabels[p.category]} in {p.location}
+                  {categoryLabels[p.category]}
+                  {p.location ? ` in ${p.location}` : ""}
                 </p>
                 <p>{p.summary}</p>
               </div>

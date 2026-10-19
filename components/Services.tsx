@@ -9,7 +9,8 @@ export default function Services() {
         <div className="services">
           {services.map((s) => (
             <article key={s.id} className={`service service-${s.id}`}>
-              <div className="service-swatch" aria-hidden="true" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="service-swatch" src={s.image} alt="" aria-hidden="true" loading="lazy" />
               <h3>{s.title}</h3>
               <p>{s.text}</p>
               <ul>

@@ -24,18 +24,21 @@ export const categoryLabels: Record<Category, string> = {
 export const services = [
   {
     id: "cabro",
+    image: "/projects/detail-cabro.jpg",
     title: "Cabro works",
     text: "Interlocking cabro paving for driveways, parking bays, walkways and compounds at homes, businesses and institutions.",
     points: ["Driveways and parking", "Pathways and patios", "School, office and estate compounds"],
   },
   {
     id: "lawn",
+    image: "/projects/detail-lawn.jpg",
     title: "Lawn installation and maintenance",
     text: "We establish new lawns and keep them green with regular pruning and year-round upkeep.",
     points: ["New lawn installation", "Pruning and mowing", "Ongoing maintenance"],
   },
   {
     id: "garden",
+    image: "/projects/detail-garden.jpg",
     title: "Garden design",
     text: "Custom layouts for your space, including hedges and styled flower beds.",
     points: ["Garden layouts", "Hedges", "Flower bed styling"],
@@ -51,18 +54,48 @@ export const steps = [
 
 export type Project = {
   title: string;
-  location: string;
   category: Category;
   summary: string;
-  image?: string; // e.g. "/projects/kiambu-driveway.jpg" (put the file in /public/projects)
+  image?: string; // file in /public/projects
+  location?: string; // optional, e.g. "Kiambu"
+  focus?: string; // CSS object-position for the card crop, e.g. "50% 30%"
 };
 
-// TODO: Replace these sample entries with your real completed projects and photos.
+// Real completed work. Add a `location` to any entry to show the town or county on its card.
 export const projects: Project[] = [
-  { title: "Residential driveway", location: "Kiambu", category: "cabro", summary: "Interlocking cabro driveway and parking bay." },
-  { title: "School compound paving", location: "Kisii", category: "cabro", summary: "Cabro walkways linking classrooms and the main gate." },
-  { title: "Front lawn installation", location: "Rongo", category: "lawn", summary: "New lawn established and trimmed for a family home." },
-  { title: "Commercial lawn upkeep", location: "Kitale", category: "lawn", summary: "Regular pruning and maintenance of office grounds." },
-  { title: "Hedge and flower bed layout", location: "Kiambu", category: "garden", summary: "Clipped hedge border with styled flower beds." },
-  { title: "Garden and pathway design", location: "Kisii", category: "garden", summary: "Custom garden layout with a cabro path through it." },
+  {
+    title: "Cabro driveway with flower borders",
+    category: "cabro",
+    summary: "Interlocking cabro driveway edged with mulched flower beds.",
+    image: "/projects/flower-lined-driveway.jpg",
+    focus: "50% 30%",
+  },
+  {
+    title: "Gazebo and cabro pathway",
+    category: "garden",
+    summary: "Curved cabro path around a gazebo, with levelled grounds and young trees.",
+    image: "/projects/gazebo-cabro-path.jpg",
+    focus: "50% 55%",
+  },
+  {
+    title: "Lawn installation",
+    category: "lawn",
+    summary: "Freshly established lawn in front of a multi-storey building.",
+    image: "/projects/school-lawn.jpg",
+    focus: "50% 15%",
+  },
+  {
+    title: "Gated compound paving",
+    category: "cabro",
+    summary: "Interlocking cabro laid right up to a steel gate and boundary wall.",
+    image: "/projects/gated-compound-paving.jpg",
+    focus: "55% 50%",
+  },
+  {
+    title: "Coloured cabro installation",
+    category: "cabro",
+    summary: "Red cabro with a black and white feature strip and concrete kerb edging.",
+    image: "/projects/coloured-cabro-kerb.jpg",
+    focus: "50% 60%",
+  },
 ];
