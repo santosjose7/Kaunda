@@ -99,3 +99,11 @@ export const projects: Project[] = [
     focus: "50% 60%",
   },
 ];
+
+export const heroSlides = [
+  { src: "/projects/gazebo-cabro-path.jpg", alt: "A curved cabro pathway leading to a gazebo on freshly landscaped grounds", focus: "50% 55%" },
+  { src: "/projects/flower-lined-driveway.jpg", alt: "A cabro driveway edged with mulched flower beds", focus: "50% 30%" },
+  { src: "/projects/school-lawn.jpg", alt: "A freshly established lawn in front of a multi-storey building", focus: "50% 15%" },
+  { src: "/projects/coloured-cabro-kerb.jpg", alt: "Red cabro with a black and white feature strip and concrete kerb edging", focus: "50% 60%" },
+  { src: "/projects/gated-compound-paving.jpg", alt: "Interlocking cabro laid up to a steel gate and boundary wall", focus: "55% 50%" },
+];

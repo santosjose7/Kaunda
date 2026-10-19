@@ -1,4 +1,5 @@
 import { business, whatsappLink } from "@/lib/data";
+import HeroSlideshow from "./HeroSlideshow";
 
 export default function Hero() {
   return (
@@ -21,12 +22,7 @@ export default function Hero() {
         </div>
         <div className="scene-wrap">
           <div className="scene">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/projects/gazebo-cabro-path.jpg"
-              alt="A curved cabro pathway leading to a gazebo on freshly landscaped grounds"
-              fetchPriority="high"
-            />
+            <HeroSlideshow />
           </div>
           <div className="chip chip-a">
             <strong>Since {business.established}</strong>
